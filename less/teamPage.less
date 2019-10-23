@@ -1,0 +1,56 @@
+.teamPage{
+    .hero-section{
+        background-color: @primColorLight;
+
+        @media @tablet{
+            padding-top: 15%;
+        }
+        
+        h2{
+            color: white;
+            text-align: center;
+            padding-top: 15%;
+        }
+
+        p{
+            color: white;
+            text-align: center;
+            padding: 2.5% 5% 7.5% 5%;
+        }
+    }
+
+    .content-section{
+
+        p,h5{
+            text-align: center;
+        }
+
+        img{
+            margin:1rem auto;
+            width: 11.5rem;
+        }
+
+        .card-content{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            
+            .card-row{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .wrap{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+
+            .card{
+                padding: 1rem 1rem;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
