@@ -1,0 +1,101 @@
+.home{
+
+    .hero-section{
+        height: 38rem;
+        background-image: url(../img/undraw_Tree_swing_646s.svg);
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: 80%;
+        padding-top: 10%;
+        display: flex;
+        flex-direction: column;
+
+        @media @tablet{
+            background-position: 20rem top;
+            height: auto;
+        }
+
+        h2{
+            margin-top: 25%;
+        }
+
+        p{
+            width: 50%;
+
+            @media @tablet{
+                width: 75%;
+            }
+
+            @media @phone{
+                width: 100%;
+            }
+        }
+
+        a{
+            .primButton();
+            margin-top: 2rem;
+        }
+    }
+
+    .content-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media @tablet{
+            flex-direction: column;
+        }
+
+        .text-content{
+            width: 100%;
+            margin: 2rem;
+
+            @media @tablet{
+                width: 80%;
+            }
+
+            h5{
+                text-align: center;
+            }
+
+            p{
+                margin-top: 1.5rem;
+
+                @media @tablet{
+                    text-align: center;
+                }
+            }
+        }
+
+        .img-content{
+            @media @tablet{
+                width: 75%;
+                margin: 0 auto;
+            }
+
+            @media @phone{
+                width: 100%;
+            }
+        }
+    }
+
+    .inverse-content{
+        @media @tablet{
+            flex-direction: column-reverse;
+        }
+    }
+
+    .cta-section{
+        display: flex;
+        flex-direction: column;
+
+        h4{
+            text-align: center;
+        }
+
+        a{
+            .primButton();
+            margin: 2rem auto;
+        }
+    }
+}

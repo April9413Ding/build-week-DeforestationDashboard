@@ -1,0 +1,50 @@
+.nav{
+    position:fixed;
+    height: 4.5rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+
+    @media @tablet{
+        height: 9rem;
+    }
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    @media @tablet{
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-around;
+    }
+
+    a{
+        text-decoration: none;
+        color: @primColorLink;
+        margin: 0 1rem;
+        letter-spacing: 1.25px;
+    }
+
+    div{
+        display: flex;
+        align-items: center;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+
+        p{
+            padding-left: 1.25rem;
+            color: @primColorLight;
+            font-size: 1.25rem;
+        }
+    }
+
+    .secdBtn{
+        .secdButton();
+    }
+}

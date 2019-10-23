@@ -1,0 +1,404 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', 'sans-serif';
+  color: black;
+  line-height: 1.5;
+  font-weight: 400;
+}
+p {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+.subTitle {
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+h1 {
+  font-size: 6.4rem;
+  font-weight: 300;
+  letter-spacing: -1.5px;
+}
+h2 {
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+h3 {
+  font-size: 3rem;
+  letter-spacing: 0;
+}
+h4 {
+  font-size: 2.25rem;
+  letter-spacing: 0.25px;
+}
+h5 {
+  font-size: 1.5rem;
+  letter-spacing: 0;
+}
+h6 {
+  font-size: 1.25rem;
+  letter-spacing: 0.25px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem 0 2rem;
+}
+section {
+  margin-bottom: 8rem;
+}
+.nav {
+  position: fixed;
+  height: 4.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+}
+@media (max-width:900px) {
+  .nav {
+    height: 9rem;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+@media (max-width:900px) {
+  nav {
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: space-around;
+  }
+}
+nav a {
+  text-decoration: none;
+  color: #40770D;
+  margin: 0 1rem;
+  letter-spacing: 1.25px;
+}
+nav div {
+  display: flex;
+  align-items: center;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+nav .logo p {
+  padding-left: 1.25rem;
+  color: #7BAD2C;
+  font-size: 1.25rem;
+}
+nav .secdBtn {
+  text-decoration: none;
+  text-align: center;
+  color: #40770D;
+  letter-spacing: 1.25px;
+  width: 10rem;
+  height: 2.25rem;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 0.55rem 0 0.75rem 0;
+  line-height: 1;
+}
+footer p {
+  text-align: center;
+  margin: 3rem 0;
+}
+.home .hero-section {
+  height: 38rem;
+  background-image: url(../img/undraw_Tree_swing_646s.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 80%;
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width:900px) {
+  .home .hero-section {
+    background-position: 20rem top;
+    height: auto;
+  }
+}
+.home .hero-section h2 {
+  margin-top: 25%;
+}
+.home .hero-section p {
+  width: 50%;
+}
+@media (max-width:900px) {
+  .home .hero-section p {
+    width: 75%;
+  }
+}
+@media (max-width:600px) {
+  .home .hero-section p {
+    width: 100%;
+  }
+}
+.home .hero-section a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  letter-spacing: 1.25px;
+  width: 11rem;
+  height: 2.25rem;
+  border-radius: 4px;
+  background-color: #C0E07E;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 0.55rem 0 0.75rem 0;
+  line-height: 1;
+  margin-top: 2rem;
+}
+.home .content-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width:900px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
+.home .content-section .text-content {
+  width: 100%;
+  margin: 2rem;
+}
+@media (max-width:900px) {
+  .home .content-section .text-content {
+    width: 80%;
+  }
+}
+.home .content-section .text-content h5 {
+  text-align: center;
+}
+.home .content-section .text-content p {
+  margin-top: 1.5rem;
+}
+@media (max-width:900px) {
+  .home .content-section .text-content p {
+    text-align: center;
+  }
+}
+@media (max-width:900px) {
+  .home .content-section .img-content {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+@media (max-width:600px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
+@media (max-width:900px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
+.home .cta-section {
+  display: flex;
+  flex-direction: column;
+}
+.home .cta-section h4 {
+  text-align: center;
+}
+.home .cta-section a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  letter-spacing: 1.25px;
+  width: 11rem;
+  height: 2.25rem;
+  border-radius: 4px;
+  background-color: #C0E07E;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 0.55rem 0 0.75rem 0;
+  line-height: 1;
+  margin: 2rem auto;
+}
+.teamPage .hero-section {
+  background-color: #7BAD2C;
+}
+@media (max-width:900px) {
+  .teamPage .hero-section {
+    padding-top: 15%;
+  }
+}
+.teamPage .hero-section h2 {
+  color: white;
+  text-align: center;
+  padding-top: 15%;
+}
+.teamPage .hero-section p {
+  color: white;
+  text-align: center;
+  padding: 2.5% 5% 7.5% 5%;
+}
+.teamPage .content-section p,
+.teamPage .content-section h5 {
+  text-align: center;
+}
+.teamPage .content-section img {
+  margin: 1rem auto;
+  width: 11.5rem;
+}
+.teamPage .content-section .card-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.teamPage .content-section .card-content .card-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.teamPage .content-section .card-content .card-row .wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.teamPage .content-section .card-content .card {
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
